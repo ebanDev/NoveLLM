@@ -24,6 +24,8 @@ const generateStory = async () => {
         # ${novel.title}
 
         ${novel.content}
+
+        Continue the story, send only the rest of the story below this line :
         `
 
   for await (const output of hf.textGenerationStream({
